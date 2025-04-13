@@ -1,13 +1,3 @@
---[=[
- d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
-88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
-88      88    88    88            odD'      88      88    88 88ooo88 
-88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-]=]
-
--- Instances: 118 | Scripts: 69 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.MainHelloRizz
@@ -870,9 +860,9 @@ G2L["65"] = Instance.new("UICorner", G2L["61"]);
 
 
 
--- StarterGui.MainHelloRizz.Main.ConsolePanel.LocalScript
+-- StarterGui.MainHelloRizz.Main.ConsolePanel.ConsoleMain
 G2L["66"] = Instance.new("LocalScript", G2L["61"]);
-
+G2L["66"]["Name"] = [[ConsoleMain]];
 
 
 -- StarterGui.MainHelloRizz.Open
@@ -2363,7 +2353,7 @@ local script = G2L["64"];
 	
 end;
 task.spawn(C_64);
--- StarterGui.MainHelloRizz.Main.ConsolePanel.LocalScript
+-- StarterGui.MainHelloRizz.Main.ConsolePanel.ConsoleMain
 local function C_66()
 local script = G2L["66"];
 	local consoleBox = script.Parent:WaitForChild("ScrollingFrame"):WaitForChild("ConsoleBox")
@@ -2381,11 +2371,11 @@ local script = G2L["66"];
 	
 	-- Append log with emoji and timestamp
 	local function addToConsole(text, messageType)
-		local emoji = "⚪" -- Default: print
+		local emoji = "⏺️" -- Default: print
 		if messageType == Enum.MessageType.MessageWarning then
-			emoji = "🟡"
+			emoji = "⚠️"
 		elseif messageType == Enum.MessageType.MessageError then
-			emoji = "🔴"
+			emoji = "⛔"
 		end
 	
 		local newLine = string.format("%s %s %s", emoji, getTimeStamp(), text)
