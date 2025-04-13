@@ -1,8 +1,19 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 118 | Scripts: 69 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.MainHelloRizz
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["DisplayOrder"] = 999999999;
 G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
 G2L["1"]["Name"] = [[MainHelloRizz]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
@@ -11,6 +22,7 @@ G2L["1"]["ResetOnSpawn"] = false;
 
 -- StarterGui.MainHelloRizz.Main
 G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["ZIndex"] = 999999999;
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["Size"] = UDim2.new(1.1, 0, 1.1, 0);
@@ -22,6 +34,7 @@ G2L["2"]["BackgroundTransparency"] = 0.5;
 -- StarterGui.MainHelloRizz.Main.EditorPanel
 G2L["3"] = Instance.new("Frame", G2L["2"]);
 G2L["3"]["Visible"] = false;
+G2L["3"]["ZIndex"] = 999999999;
 G2L["3"]["BorderSizePixel"] = 0;
 G2L["3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3"]["Size"] = UDim2.new(0, 1047, 0, 640);
@@ -171,6 +184,7 @@ G2L["12"]["Name"] = [[ScrollEditor]];
 
 -- StarterGui.MainHelloRizz.Main.HomePanel
 G2L["13"] = Instance.new("Frame", G2L["2"]);
+G2L["13"]["ZIndex"] = 999999999;
 G2L["13"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["13"]["Size"] = UDim2.new(0, 1047, 0, 640);
 G2L["13"]["Position"] = UDim2.new(0.20664, 0, 0.13826, 0);
@@ -394,6 +408,7 @@ G2L["2d"]["Name"] = [[HoverClickSound]];
 
 -- StarterGui.MainHelloRizz.Main.MenuBar
 G2L["2e"] = Instance.new("Frame", G2L["2"]);
+G2L["2e"]["ZIndex"] = 999999999;
 G2L["2e"]["BorderSizePixel"] = 0;
 G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
@@ -413,6 +428,7 @@ G2L["2f"]["CornerRadius"] = UDim.new(0.2, 0);
 G2L["30"] = Instance.new("ImageButton", G2L["2"]);
 G2L["30"]["BorderSizePixel"] = 0;
 G2L["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["ZIndex"] = 999999999;
 G2L["30"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["30"]["Image"] = [[rbxassetid://85375410758983]];
 G2L["30"]["Size"] = UDim2.new(0, 100, 0, 100);
@@ -483,6 +499,7 @@ G2L["39"]["Name"] = [[ConsoleClose]];
 G2L["3a"] = Instance.new("ImageButton", G2L["2"]);
 G2L["3a"]["BorderSizePixel"] = 0;
 G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["ZIndex"] = 999999999;
 G2L["3a"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["3a"]["Image"] = [[rbxassetid://99426356243840]];
 G2L["3a"]["Size"] = UDim2.new(0, 100, 0, 100);
@@ -548,6 +565,7 @@ G2L["42"]["Name"] = [[ConsoleClose]];
 G2L["43"] = Instance.new("ImageButton", G2L["2"]);
 G2L["43"]["BorderSizePixel"] = 0;
 G2L["43"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["ZIndex"] = 999999999;
 G2L["43"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["43"]["Image"] = [[rbxassetid://74269446908261]];
 G2L["43"]["Size"] = UDim2.new(0, 100, 0, 100);
@@ -612,6 +630,7 @@ G2L["4b"]["Name"] = [[ConsoleClose]];
 -- StarterGui.MainHelloRizz.Main.SettingsPanel
 G2L["4c"] = Instance.new("Frame", G2L["2"]);
 G2L["4c"]["Visible"] = false;
+G2L["4c"]["ZIndex"] = 999999999;
 G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4c"]["Size"] = UDim2.new(0, 1047, 0, 640);
 G2L["4c"]["Position"] = UDim2.new(0.20664, 0, 0.13826, 0);
@@ -729,6 +748,7 @@ G2L["56"]["Name"] = [[HoverClickSound]];
 G2L["57"] = Instance.new("ImageButton", G2L["2"]);
 G2L["57"]["BorderSizePixel"] = 0;
 G2L["57"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["57"]["ZIndex"] = 999999999;
 G2L["57"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["57"]["Image"] = [[rbxassetid://121199774453744]];
 G2L["57"]["Size"] = UDim2.new(0, 100, 0, 100);
@@ -798,6 +818,7 @@ G2L["60"]["Name"] = [[EditorClose]];
 -- StarterGui.MainHelloRizz.Main.ConsolePanel
 G2L["61"] = Instance.new("Frame", G2L["2"]);
 G2L["61"]["Visible"] = false;
+G2L["61"]["ZIndex"] = 999999999;
 G2L["61"]["BorderSizePixel"] = 0;
 G2L["61"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["61"]["Size"] = UDim2.new(0, 1047, 0, 640);
@@ -858,6 +879,7 @@ G2L["66"] = Instance.new("LocalScript", G2L["61"]);
 G2L["67"] = Instance.new("ImageButton", G2L["1"]);
 G2L["67"]["BorderSizePixel"] = 0;
 G2L["67"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["67"]["ZIndex"] = 999999999;
 G2L["67"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["67"]["Image"] = [[rbxassetid://137287079360442]];
 G2L["67"]["Size"] = UDim2.new(0, 100, 0, 100);
